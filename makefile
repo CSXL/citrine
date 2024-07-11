@@ -1,5 +1,5 @@
 # Define project name and paths
-PROJECT_NAME = hledger-cli
+PROJECT_NAME = citrine
 SRC_DIR = src
 APP_DIR = app
 TEST_DIR = test
@@ -20,7 +20,7 @@ build:
 
 # Run the project
 run:
-	$(EXEC) $(PROJECT_NAME)
+	$(EXEC) $(PROJECT_NAME)-exe
 
 # Run the test suite
 test:
