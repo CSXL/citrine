@@ -10,6 +10,8 @@ BUILD = $(STACK) build
 EXEC = $(STACK) exec
 TEST = $(STACK) test
 CLEAN = $(STACK) clean
+WATCH = $(STACK) build --file-watch
+GHCI = $(STACK) ghci
 
 # Default target
 all: build
@@ -32,6 +34,9 @@ clean:
 
 # Watch for changes and rebuild
 watch:
-	$(STACK) build --file-watch
+	$(WATCH)
 
-.PHONY: all build run test clean watch
+ghci:
+	$(GHCI)
+
+.PHONY: all build run test clean watch ghci
