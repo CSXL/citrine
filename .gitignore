@@ -1,0 +1,5 @@
+*.csv
+*:Zone.Identifier
+*.ledger
+*.beancount
+venv/
